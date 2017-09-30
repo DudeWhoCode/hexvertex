@@ -1,0 +1,12 @@
+hash: 7fe3f5febb6d604b3a93773ad62a17549ada8515bd7d651795aaa01ccf4873e6
+updated: 2017-09-30T13:16:31.40628203+05:30
+imports:
+- name: github.com/ChimeraCoder/anaconda
+  version: 0cb3e4c3ff8c6df5c73d5058c64e9c4eb6299c4b
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 24fca303ac6da784b9e8269f724ddeb0b2eea5e7
+- name: github.com/mrjones/oauth
+  version: 3f67d9c274355678b2f9844b08d643e2f9213340
+testImports: []
