@@ -11,22 +11,6 @@ var C *oauth.Consumer
 
 func NewOauth() {
 	Tokens = make(map[string]*oauth.RequestToken)
-
-	//var consumerKey *string = flag.String(
-	//	"consumerkey",
-	//	"",
-	//	"Consumer Key from Twitter. See: https://dev.twitter.com/apps/new")
-	//
-	//var consumerSecret *string = flag.String(
-	//	"consumersecret",
-	//	"",
-	//	"Consumer Secret from Twitter. See: https://dev.twitter.com/apps/new")
-	//
-	//var port *int = flag.Int(
-	//	"port",
-	//	8888,
-	//	"Port to listen on.")
-
 	var consumerKey *string
 	var consumerSecret *string
 	key := os.Getenv("KEY")
