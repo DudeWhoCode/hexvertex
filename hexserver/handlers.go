@@ -40,7 +40,7 @@ func GetTwitterToken(w http.ResponseWriter, r *http.Request) {
 	}
 
 	response, err := client.Get(
-		"https://api.twitter.com/1.1/statuses/home_timeline.json?count=1")
+		"https://api.twitter.com/1.1/statuses/user_timeline.json?count=50&screen_name=dudewhocode")
 	if err != nil {
 		log.Fatal(err)
 	}
