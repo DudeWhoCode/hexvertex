@@ -23,7 +23,7 @@ var routes = Routes{
 	Route{
 		"redirectUser",
 		"GET",
-		"/",
+		"/api/twitter-login",
 		RedirectUserToTwitter,
 	},
 	Route{
