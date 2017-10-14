@@ -32,4 +32,10 @@ var routes = Routes{
 		"/maketoken",
 		GetTwitterToken,
 	},
+	Route{
+		"login",
+		"GET",
+		"/",
+		Login,
+	},
 }
