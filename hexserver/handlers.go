@@ -6,6 +6,7 @@ import (
 	"log"
 	"io/ioutil"
 	"github.com/DudeWhoCode/hexvertex/backend"
+	"path"
 )
 
 
@@ -28,7 +29,6 @@ func GetTwitterToken(w http.ResponseWriter, r *http.Request) {
 	values := r.URL.Query()
 	verificationCode := values.Get("oauth_verifier")
 	tokenKey := values.Get("oauth_token")
-
 	accessToken, err := backend.C.AuthorizeToken(backend.Tokens[tokenKey], verificationCode)
 	if err != nil {
 		log.Fatal(err)
@@ -50,3 +50,7 @@ func GetTwitterToken(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "The newest item in your home timeline is: "+string(bits))
 }
 
+func Login(w http.ResponseWriter, r *http.Request) {
+	fileName := path.Join("templates", "login.html")
+	http.ServeFile(w,r,fileName)
+}
